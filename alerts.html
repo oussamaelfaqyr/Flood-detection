@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Alerts</title>
+    <title>Alerts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
 </head>
 <body>
@@ -21,28 +23,17 @@
             </ul>
         </nav>
     </header>
-    
-    <main class="container" style="padding: 5rem 2rem; max-width: 800px; margin: auto;">
-        <h1>Alert Notifications</h1>
-        <p>These alerts share the same styling and animations.</p>
+
+    <main class="container">
+
+        <h1>Real-Time Alerts</h1>
+        <p>Stay informed about the latest alerts and warnings in your area.</p>
         
-        <!-- Warning Alert -->
-        <div class="alert alert-warning">
-            <h3>Warning!</h3>
-            <p>This is a warning alert. Please take necessary precautions.</p>
-        </div>
-
-        <!-- Success Alert -->
-        <div class="alert alert-success" style="background: var(--success-color);">
-            <h3>Success!</h3>
-            <p>Your action was successful. Keep going!</p>
-        </div>
-
-        <!-- Info Alert -->
-        <div class="alert alert-info" style="background: var(--primary-color);">
-            <h3>Info</h3>
-            <p>Here’s some information for you to check.</p>
+        <div class="alerts-container">
+            <!-- Les alertes seront insérées ici dynamiquement par JavaScript -->
         </div>
     </main>
+    
+    <script src="scripts.js"></script> <!-- Link your JS file -->
 </body>
 </html>
