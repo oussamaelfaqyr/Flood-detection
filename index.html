@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloodWatch - Real-Time Flood Monitoring</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="logo">
+            <img src="Logo.jpg" alt="FloodWatch Logo" id="logo">
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alerts.html">Real-Time Alerts</a></li>
+                <li><a href="safety.html">Safety Guidelines</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="rain"></div>
+            <h1 class="centered-name">FloodWatch</h1>
+            <p class="tagline">Protecting Communities Through Real-Time Monitoring</p>
+            <div class="hero-cta">
+                <div class="hero-cta">
+                    <a href="alerts.html" class="btn-primary" aria-label="View Active Alerts">View Active Alerts</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map-section">
+            <h2>Live Flood Map</h2>
+            <div id="map" style="height: 500px;"></div>
+        </section>
+    </main>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
